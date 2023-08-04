@@ -1,0 +1,12 @@
+spring:
+    profiles:
+        active: dev
+    application:
+        name: PAYMENT-SERVICE
+    #  config:
+    #    import: "optional:configserver:http://localhost:8088"
+    cloud:
+        config:
+            enabled: false
+#      import-check:
+#        enabled: false

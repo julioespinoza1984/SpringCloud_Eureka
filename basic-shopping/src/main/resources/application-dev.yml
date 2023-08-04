@@ -1,0 +1,18 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8026/BasicEureka/eureka/
+  instance:
+    hostname: localhost
+
+server:
+  port: 9999
+  servlet:
+    context-path: /Shopping
+
+app:
+  service:
+    payment:
+      url: http://PAYMENT-SERVICE/Payment/payment-provider/payNow/
