@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service("shoppingService")
 @RequiredArgsConstructor
 @Slf4j
-public class ShoppingServiceImpl implements ShoppingService{
+public class ShoppingServiceImpl implements ShoppingService {
     private final ShoppingDao shoppingDao;
 
     @Override
